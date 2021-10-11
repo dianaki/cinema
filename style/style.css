@@ -239,4 +239,90 @@ a {
     min-width: 108px;
 }
 
+.scheme {
+    margin-bottom: 40px;
+}
 
+.scheme__container {
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+}
+
+.scheme__svg path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: fill 0.2s;
+}
+
+.scheme__svg path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked, .scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: default;
+}
+
+.scheme path.active, .scheme path.active:hover {
+    fill: #FE8E05;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.legend svg {
+    margin-right: 15px;
+}
+
+.legend__label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.legend__label:last-child {
+    margin-right: 0;
+}
+
+.legend__text {
+    opacity: 0.5;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.price__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__label {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price__sum {
+    font-size: 52px;
+    line-height: 61px;
+}
+
+.button {
+    cursor: pointer;
+    padding: 24px 52px;
+    background: #FE8E05;
+    border: #FE8E05;
+    border-radius: 5px;
+    color: inherit;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+}
